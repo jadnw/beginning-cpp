@@ -1,9 +1,5 @@
 #include <iostream>
-#include <iomanip>
 #include <string>
-#include <cctype>
-#include <vector>
-#include <sstream>
 
 int main() {
   std::string nums;
