@@ -1,7 +1,7 @@
-CXX = clang++
-CXXFLAGS = -stdlib=libc++ -std=c++17 -g
+CXX=clang++
+CXXFLAGS=-std=c++17 -stdlib=libc++ -g
 
-all: main.o
+start: main.o
 	$(CXX) $(CXXFLAGS) -o main.o main.cpp && ./main.o
 
 build: main.o
