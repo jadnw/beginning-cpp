@@ -1,0 +1,3 @@
+#!/bin/fish
+
+cd ~/Workspaces/beginning-cpp/build && cmake .. && make && ./BeginningCpp

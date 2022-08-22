@@ -8,8 +8,6 @@ private:
 
 public:
   Integer(int val);
-  Integer() = default;
-  Integer(const Integer& obj);
 
   int getValue() const {
     return value;
@@ -18,8 +16,6 @@ public:
     value = val;
   };
   void show() const;
-  // int compare(Integer obj) const;
-  int compare(const Integer& obj) const;
 };
 
 #endif
