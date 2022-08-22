@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/jadnw/Workspaces/beginning-cpp/build",
+  "command": "/usr/bin/c++  -I/home/jadnw/Workspaces/beginning-cpp/include  -std=c++17 -O3 -o CMakeFiles/BeginningCpp.dir/src/Integer.cpp.o -c /home/jadnw/Workspaces/beginning-cpp/src/Integer.cpp",
+  "file": "/home/jadnw/Workspaces/beginning-cpp/src/Integer.cpp"
+},
+{
+  "directory": "/home/jadnw/Workspaces/beginning-cpp/build",
+  "command": "/usr/bin/c++  -I/home/jadnw/Workspaces/beginning-cpp/include  -std=c++17 -O3 -o CMakeFiles/BeginningCpp.dir/src/main.cpp.o -c /home/jadnw/Workspaces/beginning-cpp/src/main.cpp",
+  "file": "/home/jadnw/Workspaces/beginning-cpp/src/main.cpp"
+}
+]
