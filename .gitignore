@@ -1,2 +1,5 @@
-# Ignore build
-main.o
+# Ignore build directory
+build/
+
+# Cache
+.cache/
