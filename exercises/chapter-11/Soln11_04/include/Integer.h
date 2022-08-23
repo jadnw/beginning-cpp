@@ -19,7 +19,7 @@ public:
   };
   void show() const;
   // int compare(Integer obj) const;
-  int compare(const Integer& obj) const;
+  friend int compare(const Integer& obj1, const Integer& obj2);
 };
 
 #endif

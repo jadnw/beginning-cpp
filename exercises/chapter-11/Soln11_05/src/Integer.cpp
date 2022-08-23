@@ -15,22 +15,27 @@
 #include "Integer.h"
 
 Integer::Integer(int val) : value {val} {
+  ++count;
   std::cout << "An object created." << std::endl;
 };
 
+Integer::Integer() {
+  ++count;
+  std::cout << "An object created with default constructor." << std::endl;
+}
+
 Integer::Integer(const Integer& obj) : value {obj.value} {
-    std::cout << "The copy constructor called." << std::endl;
-  };
+  ++count;
+  std::cout << "The copy constructor called." << std::endl;
+};
+
+Integer::~Integer() {
+  --count;
+}
 
 void Integer::show() const {
   std::cout << "Value is " << value << std::endl;
 }
-
-// int Integer::compare(Integer obj) const {
-//   if (value < obj.value) return -1;
-//   if (value == obj.value) return 0;
-//   return 1;
-// }
 
 int Integer::compare(const Integer& obj) const {
   if (value < obj.value) return -1;

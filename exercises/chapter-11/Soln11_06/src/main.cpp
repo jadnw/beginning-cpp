@@ -10,10 +10,32 @@ void addRandomBoxes(std::vector<SharedBox>& vector, size_t num);
 int main() {
   std::srand((unsigned)std::time(0));
   
-  Truckload load {};
-  addRandomBoxes(load, 12);
-  std::cout << "The list:\n";
-  load.listBoxesReversed();
+  Truckload load1 {};
+  addRandomBoxes(load1, 12);
+  std::cout << "The firs list:\n";
+  load1.listBoxes();
+
+  // Find the largest Box in the list
+  SharedBox largestBox {findLargestBox(load1)};
+
+  std::cout << "\nThe largest box in the first list is ";
+  largestBox->listBox();
+  std::cout << std::endl;
+  load1.removeBox(largestBox);
+  std::cout << "\nAfter deleting the largest box, the list contains:\n";
+  load1.listBoxes();
+
+  std::vector<SharedBox> boxes;
+  addRandomBoxes(boxes, 20);
+
+  Truckload load2 {boxes};
+  std::cout << "\nThe second list:\n";
+  load2.listBoxes();
+
+  std::cout << "\nThe smallest box in the second list is ";
+  SharedBox smallestBox {findSmallestBox(load2)};
+  smallestBox->listBox();
+  std::cout << std::endl;
 }
 
 SharedBox findLargestBox(const Truckload& truckload) {
