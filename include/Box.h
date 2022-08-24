@@ -17,6 +17,10 @@ public:
     return length * width * height;
   }
 
+  bool operator<(const Box& aBox) {
+    return this->volume() < aBox.volume();
+  }
+
   int compare(const Box& box) const {
     if (volume() < box.volume()) return -1;
     if (volume() == box.volume()) return 0;
